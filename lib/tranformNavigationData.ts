@@ -1,6 +1,10 @@
 import { NavigationItem } from '../types';
 
-const tranformNavigationData = (data: NavigationItem[]) => {
+const tranformNavigationData = (data?: NavigationItem[]) => {
+    if (!data) {
+        return [];
+    }
+
     const findPossibleChildByParentId = (parent: NavigationItem) => {
         const childs = data.filter((item: NavigationItem) => {
             return parent.sys.id === item?.parent?.sys?.id;
