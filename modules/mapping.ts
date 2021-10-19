@@ -1,3 +1,4 @@
 import TextModule from './Text/module';
+import CardsModule from './Cards/module';
 
-export default [TextModule];
+export default [TextModule, CardsModule];

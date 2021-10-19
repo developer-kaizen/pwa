@@ -15,12 +15,6 @@ const Module: ContentfulModule = {
                     width
                     height
                 }
-                buttonLabel
-                buttonLink {
-                    page {
-                        slug
-                    }
-                }
             }
         }
     `,
