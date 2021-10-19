@@ -20,7 +20,7 @@ const fetchPageBySlug = async (slug: string) => {
             },
         });
     } catch (error) {
-        console.error(error);
+        console.error(JSON.stringify(error, null, 2));
         return false;
     }
 
@@ -43,12 +43,19 @@ const fetchPageBySlug = async (slug: string) => {
                     continue;
                 }
 
-                const moduleData = await client.query({
-                    query: internalModule.query,
-                    variables: {
-                        id: module.sys.id,
-                    },
-                });
+                let moduleData;
+
+                try {
+                    moduleData = await client.query({
+                        query: internalModule.query,
+                        variables: {
+                            id: module.sys.id,
+                        },
+                    });
+                } catch (error) {
+                    console.error(JSON.stringify(error, null, 2));
+                    continue;
+                }
 
                 // merge data fetched by base query and module query
                 modules[i] = { ...module, ...moduleData?.data };
