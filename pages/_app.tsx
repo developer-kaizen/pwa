@@ -1,7 +1,19 @@
 import { AppProps } from 'next/app';
+import Head from '@ncb/components/Head';
+import theme from '../theme';
+import GlobalStyles from '../globalStyles';
+import { ThemeProvider } from 'styled-components';
 
 function App({ Component, pageProps }: AppProps) {
-    return <Component {...pageProps} />;
+    return (
+        <>
+            <Head />
+            <GlobalStyles />
+            <ThemeProvider theme={theme}>
+                <Component {...pageProps} />
+            </ThemeProvider>
+        </>
+    );
 }
 
 export default App;
