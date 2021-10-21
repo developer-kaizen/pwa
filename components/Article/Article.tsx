@@ -1,9 +1,9 @@
+import * as Styled from './styles';
 import { renderComponents } from '@ncb/lib/renderer';
-import { Article as ArticleType } from '@ncb/types/index';
 import Modules from '@ncb/modules/mapping';
 
-const Article = ({ modulesCollection }: ArticleType) => {
-    return <>{renderComponents(modulesCollection.items, Modules)}</>;
+const Article = ({ modulesCollection, greyBackground }: any) => {
+    return <Styled.Container greyBackground>{renderComponents(modulesCollection.items, Modules)}</Styled.Container>;
 };
 
 export default Article;

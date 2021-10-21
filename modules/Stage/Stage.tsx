@@ -10,11 +10,13 @@ const Stage = (props: any) => {
                     <Styled.Subheadline>{props?.moduleStage?.subtitle}</Styled.Subheadline>
                 </Styled.Content>
 
-                <Styled.Image
-                    src={props?.moduleStage?.image?.url}
-                    width={props?.moduleStage?.image?.width}
-                    height={props?.moduleStage?.image?.height}
-                />
+                <Styled.ImageContainer>
+                    <Styled.Image
+                        src={props?.moduleStage?.image?.url}
+                        width={props?.moduleStage?.image?.width}
+                        height={props?.moduleStage?.image?.height}
+                    />
+                </Styled.ImageContainer>
             </Styled.Inner>
         </Styled.Container>
     );

@@ -30,6 +30,7 @@ const PAGE_DATA = gql`
                         sys {
                             id
                         }
+                        greyBackground
                         modulesCollection {
                             items {
                                 sys {

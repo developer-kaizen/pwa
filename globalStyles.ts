@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { colors } from './theme';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -15,6 +16,13 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Cabin', sans-serif;
+    background-color: ${colors.white};
+    color: ${colors.black};
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 32px;
   }
 `;
 
