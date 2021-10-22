@@ -1,3 +1,4 @@
+import { ST } from 'next/dist/shared/lib/utils';
 import * as Styled from './styles';
 
 const Gallery = (props: any) => {
@@ -14,7 +15,11 @@ const Gallery = (props: any) => {
     return (
         <Styled.Container>
             {images.map((image: any) => {
-                return <Styled.Image src={image?.url} width={image?.width} height={image?.height} />;
+                return (
+                    <Styled.ImageContainer>
+                        <Styled.Image src={image?.url} width={image?.width} height={image?.height} />
+                    </Styled.ImageContainer>
+                );
             })}
         </Styled.Container>
     );

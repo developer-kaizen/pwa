@@ -29,7 +29,11 @@ const Timetable = (props: any) => {
                                         <Styled.Time>{unit?.time}</Styled.Time>
                                         <Styled.Session>{unit?.name}</Styled.Session>
                                         <Styled.Trainer>
-                                            mit: <br />
+                                            {unit?.trainer && (
+                                                <>
+                                                    mit: <br />
+                                                </>
+                                            )}
                                             {unit?.trainer}
                                         </Styled.Trainer>
                                     </Styled.Cell>

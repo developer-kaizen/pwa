@@ -18,7 +18,7 @@ const Module: ContentfulModule = {
                             id
                         }
                         title
-                        subtitle
+                        buttonText
                         text {
                             json
                         }

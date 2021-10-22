@@ -14,6 +14,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  img {
+    vertical-align:text-bottom;
+    line-height: 0;
+  }
+
   body {
     font-family: 'Cabin', sans-serif;
     background-color: ${colors.white};
