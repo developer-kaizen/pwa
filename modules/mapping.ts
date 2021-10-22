@@ -4,5 +4,6 @@ import GalleryModule from './Gallery/module';
 import TimetableModule from './Timetable/module';
 import StageModule from './Stage/module';
 import HeadlineModule from './Headline/module';
+import HTMLModule from './HTML/module';
 
-export default [TextModule, CardsModule, GalleryModule, TimetableModule, StageModule, HeadlineModule];
+export default [TextModule, CardsModule, GalleryModule, TimetableModule, StageModule, HeadlineModule, HTMLModule];
