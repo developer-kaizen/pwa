@@ -4,7 +4,7 @@ import NextHead from 'next/head';
 export default function Head({ children, title }: any) {
     return (
         <>
-            <GoogleFonts href='ttps://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Mulish:wght@900&display=swap' />
+            <GoogleFonts href='https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Mulish:wght@900&display=swap' />
             <NextHead>
                 <meta charSet='UTF-8' />
                 <meta name='viewport' content='width=device-width, initial-scale=1.0' />

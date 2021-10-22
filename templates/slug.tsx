@@ -36,7 +36,9 @@ const DynamicPage = ({ pageData, mainNavigation, footerNavigation }: PageProps) 
                     })),
                 }}
             />
-            <Layout>{renderArticles(pageData?.articlesCollection?.items)}</Layout>
+            <Layout mainNavigation={mainNavigation} footerNavigation={footerNavigation}>
+                {renderArticles(pageData?.articlesCollection?.items)}
+            </Layout>
         </>
     );
 };

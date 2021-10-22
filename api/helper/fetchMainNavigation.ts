@@ -10,7 +10,7 @@ const fetchMainNavigation = async () => {
             query: MAIN_NAVIGATION,
         });
     } catch (error) {
-        console.error(error);
+        console.error(JSON.stringify(error, null, 2));
         return false;
     }
 
