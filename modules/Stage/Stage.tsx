@@ -6,14 +6,14 @@ const Stage = (props: any) => {
         <Styled.Container>
             <Styled.Inner>
                 <Styled.Content>
-                    <Parallax y={[-20, 20]}>
+                    <Parallax y={[-6, 6]}>
                         <Styled.Headline>{props?.moduleStage?.title}</Styled.Headline>
                         <Styled.Subheadline>{props?.moduleStage?.subtitle}</Styled.Subheadline>
                     </Parallax>
                 </Styled.Content>
 
                 <Styled.ImageContainer>
-                    <Parallax y={[-10, 10]}>
+                    <Parallax y={[-4, 4]}>
                         <Styled.Image
                             src={props?.moduleStage?.image?.url}
                             width={props?.moduleStage?.image?.width}

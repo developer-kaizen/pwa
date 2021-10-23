@@ -27,7 +27,10 @@ export const Headline = styled.div`
 
 export const Table = styled.div`
     text-align: left;
-    display: flex;
+
+    ${up('xl')} {
+        display: flex;
+    }
 `;
 
 export const Row = styled.div`
