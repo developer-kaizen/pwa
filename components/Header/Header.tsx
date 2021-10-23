@@ -16,7 +16,13 @@ const Header = ({ mainNavigation }: any) => {
                         {mainNavigation?.map((item: any) => {
                             return (
                                 <Styled.NavLink key={item.slug} href={item.slug}>
-                                    <Styled.NavValue>{item.title}</Styled.NavValue>
+                                    <Styled.NavValue
+                                        onClick={() => {
+                                            setOpen(false);
+                                        }}
+                                    >
+                                        {item.title}
+                                    </Styled.NavValue>
                                 </Styled.NavLink>
                             );
                         })}
