@@ -2,8 +2,6 @@ import * as Styled from './styles';
 import { useState } from 'react';
 
 const Header = ({ mainNavigation }: any) => {
-    console.log(mainNavigation);
-
     const [open, setOpen] = useState(false);
 
     const handleButtonClick = () => {

@@ -36,6 +36,11 @@ const fetchPageBySlug = async (slug: string) => {
 
             for (let i = 0; i < modules.length; i++) {
                 const module = modules[i];
+
+                if (!module) {
+                    continue;
+                }
+
                 const internalModule = findContentfulModuleByTypename(module.__typename, Modules);
 
                 if (!internalModule) {

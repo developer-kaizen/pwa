@@ -1,4 +1,5 @@
 import { ContentfulModule } from '@ncb/types/index';
+import { NewsArticleJsonLd } from 'next-seo';
 import { createElement } from 'react';
 import { findContentfulModuleByTypename } from '..';
 
@@ -8,6 +9,10 @@ const renderComponents = (items: any[], modules: ContentfulModule[]) => {
     }
 
     return items.map((item) => {
+        if (!item) {
+            return null;
+        }
+
         const module = findContentfulModuleByTypename(item.__typename, modules);
 
         if (!module) {

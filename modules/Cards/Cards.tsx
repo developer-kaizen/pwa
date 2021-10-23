@@ -6,8 +6,6 @@ const Cards = ({ moduleCards }: any) => {
         return null;
     }
 
-    console.log('sdas', moduleCards);
-
     return (
         <Styled.Container>
             {moduleCards?.title && <Styled.Headline>{moduleCards.title}</Styled.Headline>}

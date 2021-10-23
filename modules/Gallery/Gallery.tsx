@@ -16,7 +16,7 @@ const Gallery = (props: any) => {
         <Styled.Container>
             {images.map((image: any) => {
                 return (
-                    <Styled.ImageContainer>
+                    <Styled.ImageContainer key={image?.sys?.id}>
                         <Styled.Image src={image?.url} width={image?.width} height={image?.height} />
                     </Styled.ImageContainer>
                 );

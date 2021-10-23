@@ -1,7 +1,6 @@
 import * as Styled from './styles';
 
 const Stage = (props: any) => {
-    console.log('sdfasdf', props);
     return (
         <Styled.Container>
             <Styled.Inner>
