@@ -1,0 +1,23 @@
+
+import { NavigationItem, Page } from '@ncb/types/index';
+import Layout from '@ncb/components/Layout';
+import Headline from '@ncb/modules/Headline';
+import { NextSeo } from 'next-seo';
+
+const path = require('path');
+
+const DynamicPage = () => {
+    return (
+        <>
+
+            <Layout mainNavigation={mainNavigation} footerNavigation={footerNavigation}>
+                <Headline moduleHeadline={{ title: "Die Seite wurde nicht gefunden." }} />
+            </Layout>
+        </>
+    );
+};
+
+
+
+
+export default DynamicPage;
