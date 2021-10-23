@@ -7,7 +7,7 @@ export const Container = styled.div`
     padding: 80px 24px;
     text-align: center;
 
-    ${up('lg')} {
+    ${up('xl')} {
         width: ${({ theme }) => theme.maxWidth}px;
         margin: 0 auto;
         padding: 120px 0;
@@ -22,7 +22,7 @@ export const Headline = styled.div`
     margin-bottom: 40px;
     text-transform: uppercase;
 
-    ${up('lg')} {
+    ${up('xl')} {
         font-size: 32px;
         line-height: 40px;
     }
@@ -40,7 +40,7 @@ export const Cards = styled.div<{ colsSmall: number; colsMedium: number; colsLar
         grid-template-columns: repeat(${({ colsMedium }) => colsMedium}, 1fr);
     }
 
-    ${up('lg')} {
+    ${up('xl')} {
         grid-template-columns: repeat(${({ colsLarge }) => colsLarge}, 1fr);
     }
 `;
@@ -61,7 +61,7 @@ export const Content = styled.div<{ colsSmall: number; colsMedium: number; colsL
         ${({ colsMedium }) => (colsMedium > 1 ? 'height: 100%' : 'height: auto')};
     }
 
-    ${up('lg')} {
+    ${up('xl')} {
         ${({ colsLarge }) => (colsLarge > 1 ? 'height: 100%' : 'height: auto')};
         padding-bottom: 60px;
     }

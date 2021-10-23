@@ -18,10 +18,19 @@ export const MobileNavigation = styled.nav<{ open: boolean }>`
     flex-direction: column;
     justify-content: center;
     overflow: scroll;
+    display: none;
+
+    ${up('xl')} {
+        display: block;
+    }
 `;
 
 export const DesktopNavigation = styled.nav`
-    display: flex;
+    display: none;
+
+    ${up('xl')} {
+        display: flex;
+    }
 `;
 
 export const NavLink = styled(link)``;
@@ -38,7 +47,7 @@ export const NavValue = styled.div`
         margin-bottom: 0;
     }
 
-    ${up('lg')} {
+    ${up('xl')} {
         margin-bottom: 0;
         font-size: 18px;
         color: ${({ theme }) => theme.colors.black};
@@ -58,7 +67,7 @@ export const Container = styled.div`
     width: 100%;
     z-index: 10;
 
-    ${up('lg')} {
+    ${up('xl')} {
         background-color: ${({ theme }) => theme.colors.white};
     }
 `;
@@ -71,7 +80,7 @@ export const Inner = styled.div`
     background-color: ${({ theme }) => theme.colors.white};
     justify-content: space-between;
 
-    ${up('lg')} {
+    ${up('xl')} {
         width: ${({ theme }) => theme.maxWidth}px;
         margin: 0 auto;
         height: 80px;
@@ -125,7 +134,7 @@ export const Burger = styled.div<{ open: boolean }>`
     position: relative;
     z-index: 3;
 
-    ${up('lg')} {
+    ${up('xl')} {
         display: none;
     }
 

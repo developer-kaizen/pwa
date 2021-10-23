@@ -8,20 +8,20 @@ export const Container = styled.div`
     padding-left: 24px;
     padding-right: 24px;
 
-    ${up('lg')} {
+    ${up('xl')} {
         padding-top: 120px;
     }
 `;
 
 export const Content = styled.div`
-    ${up('lg')} {
+    ${up('xl')} {
         flex: 1;
         padding-right: 31px;
     }
 `;
 
 export const Inner = styled.div`
-    ${up('lg')} {
+    ${up('xl')} {
         width: ${({ theme }) => theme.maxWidth}px;
         margin: 0 auto;
         display: flex;
@@ -37,7 +37,7 @@ export const Headline = styled.div`
     margin-bottom: 20px;
     text-transform: uppercase;
 
-    ${up('lg')} {
+    ${up('xl')} {
         font-size: 48px;
         line-height: 67px;
     }
@@ -51,7 +51,7 @@ export const Subheadline = styled.div`
     color: ${({ theme }) => theme.colors.blue};
     margin-bottom: 60px;
 
-    ${up('lg')} {
+    ${up('xl')} {
         font-size: 24px;
         line-height: 34px;
     }
@@ -61,7 +61,7 @@ export const ImageContainer = styled.div`
     text-align: center;
     transform: translateY(40px);
 
-    ${up('lg')} {
+    ${up('xl')} {
         flex: 1;
         padding-left: 31px;
     }

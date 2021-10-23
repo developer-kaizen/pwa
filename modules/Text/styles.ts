@@ -5,7 +5,7 @@ export const Container = styled.div`
     text-align: center;
     padding: 80px 24px;
 
-    ${up('lg')} {
+    ${up('xl')} {
         padding: 120px 0;a
     }
 `;
@@ -21,7 +21,7 @@ export const Headline = styled.div`
     margin-left: auto;
     margin-right: auto;
 
-    ${up('lg')} {
+    ${up('xl')} {
         font-size: 36px;
         line-height: 50px;
     }
@@ -35,7 +35,7 @@ export const Text = styled.div`
     p {
         margin-bottom: 40px;
 
-        ${up('lg')} {
+        ${up('xl')} {
             font-size: 20px;
             line-height: 32px;
         }

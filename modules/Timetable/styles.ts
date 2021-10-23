@@ -5,7 +5,7 @@ export const Container = styled.div`
     padding: 80px 24px;
     text-align: center;
 
-    ${up('lg')} {
+    ${up('xl')} {
         padding: 120px 0;
         width: ${({ theme }) => theme.maxWidth}px;
         margin: 0 auto;
@@ -20,7 +20,7 @@ export const Headline = styled.div`
     margin-bottom: 40px;
     text-transform: uppercase;
 
-    ${up('lg')} {
+    ${up('xl')} {
         margin-bottom: 60px;
     }
 `;

@@ -9,7 +9,7 @@ export const TopContainer = styled.div`
     background-color: ${({ theme }) => theme.colors.darkBlue};
     color: ${({ theme }) => theme.colors.white};
 
-    ${up('lg')} {
+    ${up('xl')} {
         padding: 120px 0;
         display: flex;
         flex-wrap: wrap;
@@ -25,7 +25,7 @@ export const Headline = styled.div`
     margin-bottom: 20px;
     text-transform: uppercase;
 
-    ${up('lg')} {
+    ${up('xl')} {
         text-align: center;
         font-size: 32px;
         line-height: 44px;
@@ -40,14 +40,14 @@ export const Text = styled.div`
     line-height: 32px;
     margin-bottom: 40px;
 
-    ${up('lg')} {
+    ${up('xl')} {
         width: 980px;
         margin: 0 auto;
     }
 `;
 
 export const Head = styled.div`
-    ${up('lg')} {
+    ${up('xl')} {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
@@ -55,7 +55,7 @@ export const Head = styled.div`
 `;
 
 export const LocationData = styled.div`
-    ${up('lg')} {
+    ${up('xl')} {
         text-align: left;
         padding-left: 10px;
     }
@@ -84,7 +84,7 @@ export const BoldValue = styled.div`
 export const ContactData = styled.div`
     margin-bottom: 40px;
 
-    ${up('lg')} {
+    ${up('xl')} {
         text-align: right;
         margin-bottom: 0;
         padding-right: 10px;
@@ -96,7 +96,7 @@ export const BottomContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    ${up('lg')} {
+    ${up('xl')} {
         flex-direction: inherit;
         width: ${({ theme }) => theme.maxWidth}px;
         margin: 0 auto;
@@ -109,7 +109,7 @@ export const CopyrightContainer = styled.div`
     order: 2;
     width: 100%;
 
-    ${up('lg')} {
+    ${up('xl')} {
         order: 1;
         width: auto;
     }
@@ -128,7 +128,7 @@ export const Navigation = styled.div`
     width: 100%;
     margin-bottom: 40px;
 
-    ${up('lg')} {
+    ${up('xl')} {
         order: 2;
         width: auto;
         margin-bottom: 0;
@@ -154,7 +154,7 @@ export const NavigationValue = styled.div`
 export const Logo = styled.img`
     display: none;
 
-    ${up('lg')} {
+    ${up('xl')} {
         display: block;
         margin-bottom: 40px;
     }
