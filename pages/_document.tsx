@@ -41,6 +41,7 @@ export default class MyDocument extends Document {
                     <meta name='theme-color' content='#fff' />
                     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
                     <link rel='icon' href='/favicon.ico' type='image/x-icon' />
+                    <meta name='format-detection' content='telephone=no' />
                 </Head>
                 <body>
                     <Main />
