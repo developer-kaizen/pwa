@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import Head from '@ncb/components/Head';
 import theme from '../theme';
 import GlobalStyles from '../globalStyles';
@@ -10,7 +11,9 @@ function App({ Component, pageProps }: AppProps) {
             <Head />
             <GlobalStyles />
             <ThemeProvider theme={theme}>
-                <Component {...pageProps} />
+                <ParallaxProvider>
+                    <Component {...pageProps} />
+                </ParallaxProvider>
             </ThemeProvider>
         </>
     );

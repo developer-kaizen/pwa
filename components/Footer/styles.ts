@@ -144,9 +144,12 @@ export const NavigationValue = styled.div`
     line-height: 26px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    margin-left: 40px;
 
-    &:last-child {
+    ${up('xl')} {
+        margin-left: 40px;
+    }
+
+    &:first-child {
         margin-left: 0;
     }
 `;

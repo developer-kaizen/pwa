@@ -18,10 +18,10 @@ export const MobileNavigation = styled.nav<{ open: boolean }>`
     flex-direction: column;
     justify-content: center;
     overflow: scroll;
-    display: none;
+    display: block;
 
     ${up('xl')} {
-        display: block;
+        display: none;
     }
 `;
 
