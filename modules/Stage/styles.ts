@@ -1,16 +1,32 @@
 import styled from 'styled-components';
 import NextImage from 'next/image';
+import { up } from 'styled-breakpoints';
 
 export const Container = styled.div`
     background-color: ${({ theme }) => theme.colors.darkBlue};
     padding-top: 80px;
     padding-left: 24px;
     padding-right: 24px;
+
+    ${up('lg')} {
+        padding-top: 120px;
+    }
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+    ${up('lg')} {
+        flex: 1;
+        padding-right: 31px;
+    }
+`;
 
-export const Inner = styled.div``;
+export const Inner = styled.div`
+    ${up('lg')} {
+        width: ${({ theme }) => theme.maxWidth}px;
+        margin: 0 auto;
+        display: flex;
+    }
+`;
 
 export const Headline = styled.div`
     color: ${({ theme }) => theme.colors.white};
@@ -20,6 +36,11 @@ export const Headline = styled.div`
     line-height: 44px;
     margin-bottom: 20px;
     text-transform: uppercase;
+
+    ${up('lg')} {
+        font-size: 48px;
+        line-height: 67px;
+    }
 `;
 
 export const Subheadline = styled.div`
@@ -29,11 +50,23 @@ export const Subheadline = styled.div`
     font-style: italic;
     color: ${({ theme }) => theme.colors.blue};
     margin-bottom: 60px;
+
+    ${up('lg')} {
+        font-size: 24px;
+        line-height: 34px;
+    }
 `;
 
 export const ImageContainer = styled.div`
     text-align: center;
     transform: translateY(40px);
+
+    ${up('lg')} {
+        flex: 1;
+        padding-left: 31px;
+    }
 `;
 
-export const Image = styled(NextImage)``;
+export const Image = styled(NextImage)`
+    filter: grayscale(100%);
+`;

@@ -28,6 +28,16 @@ const Header = ({ mainNavigation }: any) => {
                         <Styled.Logo open={open}>Kaizen</Styled.Logo>
                     </Styled.LogoLink>
 
+                    <Styled.DesktopNavigation>
+                        {mainNavigation?.map((item: any) => {
+                            return (
+                                <Styled.NavLink key={item.slug} href={item.slug}>
+                                    <Styled.NavValue>{item.title}</Styled.NavValue>
+                                </Styled.NavLink>
+                            );
+                        })}
+                    </Styled.DesktopNavigation>
+
                     <Styled.Burger onClick={handleButtonClick} open={open}>
                         <Styled.BurgerInner>
                             <Styled.Line />

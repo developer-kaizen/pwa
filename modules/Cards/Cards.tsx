@@ -6,11 +6,17 @@ const Cards = ({ moduleCards }: any) => {
         return null;
     }
 
+    console.log('sdas', moduleCards);
+
     return (
         <Styled.Container>
             {moduleCards?.title && <Styled.Headline>{moduleCards.title}</Styled.Headline>}
 
-            <Styled.Cards>
+            <Styled.Cards
+                colsSmall={moduleCards?.colsSmall || 1}
+                colsMedium={moduleCards?.colsMedium || 2}
+                colsLarge={moduleCards?.colsLarge || 3}
+            >
                 {moduleCards.cardsCollection.items.map((item: any) => {
                     return (
                         <Styled.Card key={item?.sys?.id}>
@@ -18,7 +24,11 @@ const Cards = ({ moduleCards }: any) => {
                                 <Styled.Image src={item.image.url} width={item.image.width} height={item.image.height} />
                             </Styled.ImageContainer>
 
-                            <Styled.Content>
+                            <Styled.Content
+                                colsSmall={moduleCards?.colsSmall || 1}
+                                colsMedium={moduleCards?.colsMedium || 2}
+                                colsLarge={moduleCards?.colsLarge || 3}
+                            >
                                 {item?.title && <Styled.CardHeadline>{item.title}</Styled.CardHeadline>}
 
                                 {item?.text?.json && <Styled.Text>{documentToReactComponents(item?.text?.json)}</Styled.Text>}

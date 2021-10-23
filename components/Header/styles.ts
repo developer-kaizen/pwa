@@ -1,8 +1,9 @@
 import link from 'next/link';
+import { up } from 'styled-breakpoints';
 import styled from 'styled-components';
 
 // Mobile Nav
-export const MobileNavigation = styled.div<{ open: boolean }>`
+export const MobileNavigation = styled.nav<{ open: boolean }>`
     position: fixed;
     top: 0;
     left: 0;
@@ -19,6 +20,10 @@ export const MobileNavigation = styled.div<{ open: boolean }>`
     overflow: scroll;
 `;
 
+export const DesktopNavigation = styled.nav`
+    display: flex;
+`;
+
 export const NavLink = styled(link)``;
 
 export const NavValue = styled.div`
@@ -27,9 +32,21 @@ export const NavValue = styled.div`
     margin-bottom: 40px;
     font-size: 24px;
     font-weight: 700;
+    cursor: pointer;
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    ${up('lg')} {
+        margin-bottom: 0;
+        font-size: 18px;
+        color: ${({ theme }) => theme.colors.black};
+        margin-left: 40px;
+
+        &:first-child {
+            margin-left: 0;
+        }
     }
 `;
 
@@ -40,6 +57,10 @@ export const Container = styled.div`
     left: 0;
     width: 100%;
     z-index: 10;
+
+    ${up('lg')} {
+        background-color: ${({ theme }) => theme.colors.white};
+    }
 `;
 
 export const Inner = styled.div`
@@ -49,6 +70,13 @@ export const Inner = styled.div`
     align-items: center;
     background-color: ${({ theme }) => theme.colors.white};
     justify-content: space-between;
+
+    ${up('lg')} {
+        width: ${({ theme }) => theme.maxWidth}px;
+        margin: 0 auto;
+        height: 80px;
+        padding: 0;
+    }
 `;
 
 export const LogoLink = styled(link)``;
@@ -96,6 +124,10 @@ export const Burger = styled.div<{ open: boolean }>`
     border-radius: 50%;
     position: relative;
     z-index: 3;
+
+    ${up('lg')} {
+        display: none;
+    }
 
     ${({ open, theme }) =>
         open &&

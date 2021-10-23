@@ -11,7 +11,10 @@ export const fonts = {
     headlines: `'Mulish', sans-serif`,
 };
 
+export const maxWidth = 1180;
+
 export default {
     colors,
     fonts,
+    maxWidth,
 };
