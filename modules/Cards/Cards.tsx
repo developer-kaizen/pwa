@@ -16,10 +16,14 @@ const Cards = ({ moduleCards }: any) => {
                 colsLarge={moduleCards?.colsLarge || 3}
             >
                 {moduleCards.cardsCollection.items.map((item: any) => {
+                    const imageWidth = item.image.width / 2;
+                    const imageHeight = item.image.height / 2;
+                    const imageUrl = `${item.image.url}?w=${imageWidth}&h=${imageHeight}`;
+
                     return (
                         <Styled.Card key={item?.sys?.id}>
                             <Styled.ImageContainer>
-                                <Styled.Image src={item.image.url} width={item.image.width} height={item.image.height} />
+                                <Styled.Image src={imageUrl} width={imageWidth} height={imageHeight} />
                             </Styled.ImageContainer>
 
                             <Styled.Content

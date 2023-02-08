@@ -2,6 +2,12 @@ import { Parallax } from 'react-scroll-parallax';
 import * as Styled from './styles';
 
 const Stage = (props: any) => {
+    const imageWidth = props?.moduleStage?.image?.width / 2;
+    const imageHeight = props?.moduleStage?.image?.height / 2;
+    const imageUrl = `${props?.moduleStage?.image?.url}?w=${imageWidth}&h=${imageHeight}`;
+
+    console.log;
+
     return (
         <Styled.Container>
             <Styled.Inner>
@@ -14,11 +20,7 @@ const Stage = (props: any) => {
 
                 <Styled.ImageContainer>
                     <Parallax y={[-4, 4]}>
-                        <Styled.Image
-                            src={props?.moduleStage?.image?.url}
-                            width={props?.moduleStage?.image?.width}
-                            height={props?.moduleStage?.image?.height}
-                        />
+                        <Styled.Image src={imageUrl} width={imageWidth} height={imageHeight} />
                     </Parallax>
                 </Styled.ImageContainer>
             </Styled.Inner>
