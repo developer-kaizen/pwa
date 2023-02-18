@@ -42,6 +42,19 @@ export default class MyDocument extends Document {
                     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
                     <link rel='icon' href='/favicon.ico' type='image/x-icon' />
                     <meta name='format-detection' content='telephone=no' />
+                    <script async src={`https://www.googletagmanager.com/gtag/js?id=G-YPRDJGPB87`} />
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                            window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+                            gtag('config', 'G-YPRDJGPB87', {
+                            page_path: window.location.pathname,
+                            });
+                        `,
+                        }}
+                    />
                 </Head>
                 <body>
                     <Main />
