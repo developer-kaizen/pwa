@@ -42,6 +42,13 @@ export default class MyDocument extends Document {
                     <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon' />
                     <link rel='icon' href='/favicon.ico' type='image/x-icon' />
                     <meta name='format-detection' content='telephone=no' />
+                    <script
+                        id='Cookiebot'
+                        src='https://consent.cookiebot.com/uc.js'
+                        data-cbid='da74850a-e4bc-4ad2-9432-273b090008d7'
+                        type='text/javascript'
+                        async
+                    ></script>
                     <script async src={`https://www.googletagmanager.com/gtag/js?id=G-YPRDJGPB87`} />
                     <script
                         dangerouslySetInnerHTML={{
@@ -57,6 +64,12 @@ export default class MyDocument extends Document {
                     />
                 </Head>
                 <body>
+                    <script
+                        id='CookieDeclaration'
+                        src='https://consent.cookiebot.com/da74850a-e4bc-4ad2-9432-273b090008d7/cd.js'
+                        type='text/javascript'
+                        async
+                    ></script>
                     <Main />
                     <NextScript />
                 </body>
