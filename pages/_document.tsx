@@ -64,12 +64,6 @@ export default class MyDocument extends Document {
                     />
                 </Head>
                 <body>
-                    <script
-                        id='CookieDeclaration'
-                        src='https://consent.cookiebot.com/da74850a-e4bc-4ad2-9432-273b090008d7/cd.js'
-                        type='text/javascript'
-                        async
-                    ></script>
                     <Main />
                     <NextScript />
                 </body>

@@ -47,6 +47,9 @@ const FooterComponent = ({ footerNavigation }: any) => {
                             </Styled.NavigationItem>
                         );
                     })}
+                    <Styled.NavigationItem key='/cookie-erklearung' href='/cookie-erklearung'>
+                        <Styled.NavigationValue>Cookie Erklärung</Styled.NavigationValue>
+                    </Styled.NavigationItem>
                 </Styled.Navigation>
             </Styled.BottomContainer>
         </Styled.Container>
