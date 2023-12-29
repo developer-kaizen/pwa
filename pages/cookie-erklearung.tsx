@@ -24,12 +24,12 @@ const DynamicPage = ({ pageData, mainNavigation, footerNavigation }: PageProps) 
                     async
                 ></Script>
                 <style global jsx>{`
-                    .CookieDeclaration{
+                    .CookieDeclaration {
                         max-width: 500px;
                         margin: 0 auto;
-                        width: 100%;   
+                        width: 100%;
                     }
-            `}</style>
+                `}</style>
             </Layout>
         </>
     );

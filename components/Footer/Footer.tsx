@@ -28,7 +28,7 @@ const FooterComponent = ({ footerNavigation }: any) => {
                 <Styled.LocationData>
                     <Styled.Label>Erreiche uns</Styled.Label>
                     <Styled.BoldValue>Telefon:</Styled.BoldValue>
-                    <Styled.Value>0162 925 67 86</Styled.Value>
+                    <Styled.Value>01520 2060002</Styled.Value>
                     <Styled.BoldValue>E-Mail:</Styled.BoldValue>
                     <Styled.Value>info@kaizen-kampfkunst.de</Styled.Value>
                 </Styled.LocationData>
