@@ -16,15 +16,17 @@ const Cards = ({ moduleCards }: any) => {
                 colsLarge={moduleCards?.colsLarge || 3}
             >
                 {moduleCards.cardsCollection.items.map((item: any) => {
-                    const imageWidth = item.image.width / 4;
-                    const imageHeight = item.image.height / 4;
-                    const imageUrl = `${item.image.url}?w=${imageWidth}&h=${imageHeight}`;
+                    const imageWidth = 500;
+                    const imageHeight = 400;
+                    const imageUrl = `${item.image?.url}?w=500&h=${imageHeight}&fit=fill`;
 
                     return (
                         <Styled.Card key={item?.sys?.id}>
-                            <Styled.ImageContainer>
-                                <Styled.Image src={imageUrl} width={imageWidth} height={imageHeight} />
-                            </Styled.ImageContainer>
+                            {
+                                <Styled.ImageContainer>
+                                    <Styled.Image src={item.image ? imageUrl : '/500x400.svg'} width={imageWidth} height={imageHeight} />
+                                </Styled.ImageContainer>
+                            }
 
                             <Styled.Content
                                 colsSmall={moduleCards?.colsSmall || 1}
