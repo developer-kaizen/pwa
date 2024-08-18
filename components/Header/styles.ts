@@ -32,7 +32,9 @@ export const DesktopNavigation = styled.nav`
     }
 `;
 
-export const NavLink = styled(link)``;
+export const NavLink = styled(link)`
+    cursor: pointer;
+`;
 
 export const NavValue = styled.div`
     color: ${({ theme }) => theme.colors.white};
@@ -95,6 +97,7 @@ export const Logo = styled.div<{ open: boolean }>`
     text-transform: uppercase;
     z-index: 3;
     color: ${({ theme, open }) => (open ? theme.colors.white : theme.colors.black)};
+    cursor: pointer;
 `;
 
 export const BurgerInner = styled.div`
