@@ -24,7 +24,12 @@ const Cards = ({ moduleCards }: any) => {
                         <Styled.Card key={item?.sys?.id}>
                             {
                                 <Styled.ImageContainer>
-                                    <Styled.Image src={item.image ? imageUrl : '/500x400.svg'} width={imageWidth} height={imageHeight} />
+                                    <Styled.Image
+                                        src={item.image ? imageUrl : '/500x400.svg'}
+                                        width={imageWidth}
+                                        height={imageHeight}
+                                        layout={'responsive'}
+                                    />
                                 </Styled.ImageContainer>
                             }
 

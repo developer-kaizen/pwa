@@ -15,9 +15,9 @@ const Gallery = (props: any) => {
     return (
         <Styled.Container>
             {images.map((image: any) => {
-                const imageWidth = image?.width / 3;
-                const imageHeight = image?.height / 3;
-                const imageUrl = `${image?.url}?w=${imageWidth}&h=${imageHeight}`;
+                const imageWidth = 900;
+                const imageHeight = 750;
+                const imageUrl = `${image?.url}?w=${imageWidth}&h=${imageHeight}&fit=fill`;
                 return (
                     <Styled.ImageContainer key={image?.sys?.id}>
                         <Styled.Image src={imageUrl} width={imageWidth} height={imageHeight} />

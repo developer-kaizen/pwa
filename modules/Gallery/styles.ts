@@ -21,6 +21,7 @@ export const ImageContainer = styled.div`
 export const Image = styled(NextImage)`
     filter: grayscale(100%);
     transition: filter 0.5s ease;
+    width: 100%;
 
     &:hover {
         filter: grayscale(0);
