@@ -29,8 +29,10 @@ const FooterComponent = ({ footerNavigation }: any) => {
                     <Styled.Label>Erreiche uns</Styled.Label>
                     <Styled.BoldValue>Telefon:</Styled.BoldValue>
                     <Styled.Value>01520 2060002</Styled.Value>
-                    <Styled.BoldValue>E-Mail:</Styled.BoldValue>
+                    <Styled.BoldValue>E-Mail Karate :</Styled.BoldValue>
                     <Styled.Value>info@kaizen-kampfkunst.de</Styled.Value>
+                    <Styled.BoldValue>E-Mail Luta Livre :</Styled.BoldValue>
+                    <Styled.Value>kaizenlindlar.lutalivre@gmail.com</Styled.Value>
                 </Styled.LocationData>
             </Styled.TopContainer>
             <Styled.BottomContainer>
