@@ -29,10 +29,10 @@ function handleClick() {
 
     // Überschrift
     doc.setFontSize(18);
-    doc.text('Antrag auf Mitgliedschaft', 105, 20, null, null, 'center');
+    doc.text('Antrag auf Mitgliedschaft', 105, 20);
 
     doc.setFontSize(12);
-    doc.text('(Bitte vollständig und in Druckbuchstaben ausfüllen)', 105, 30, null, null, 'center');
+    doc.text('(Bitte vollständig und in Druckbuchstaben ausfüllen)', 105, 30);
 
     doc.setFontSize(10);
     doc.text('Hiermit beantrage ich im Kaizen – Verein für Kampfkunst e.V. (im Folgenden mit Kaizen e.V. bezeichnet)', 20, 50);
@@ -137,7 +137,7 @@ function handleClick() {
     doc.text('Gläubiger-Identifikationsnummer: DE42ZZZ00000791800', 20, 320);
 
     doc.setFontSize(12);
-    doc.text('SEPA-Lastschriftmandat', 105, 330, null, null, 'center');
+    doc.text('SEPA-Lastschriftmandat', 105, 330);
 
     doc.setFontSize(10);
     doc.text('Mandatsreferenz: Setzt sich aus dem Namen des Vereinsmitgliedes wie folgt zusammen:', 20, 340);
